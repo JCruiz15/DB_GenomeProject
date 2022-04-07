@@ -97,7 +97,7 @@ DROP TABLE IF EXISTS `Project2022_GenomicBD`.`Bookshelf` ;
 CREATE TABLE IF NOT EXISTS `Project2022_GenomicBD`.`Bookshelf` (
   `Genome_idGenome` INT NOT NULL,
   `Book_idBook` INT NOT NULL,
-  INDEX `fk_Bookshelf_Genome1_idx` (`Genome_idGenome` ASC) VISIBLE,
+  PRIMARY KEY (`Genome_idGenome`, `Book_idBook`),
   INDEX `fk_Bookshelf_Book1_idx` (`Book_idBook` ASC) VISIBLE)
 ENGINE = BLACKHOLE
 COMMENT = 'B';
@@ -128,6 +128,70 @@ CREATE TABLE IF NOT EXISTS `Project2022_GenomicBD`.`Chromosome` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `Project2022_GenomicBD`.`Protein`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `Project2022_GenomicBD`.`Protein` ;
+
+CREATE TABLE IF NOT EXISTS `Project2022_GenomicBD`.`Protein` (
+  `idProtein` INT NOT NULL AUTO_INCREMENT,
+  `Name` VARCHAR(45) NOT NULL,
+  `Function` VARCHAR(200) NULL DEFAULT 'Unknown',
+  `Transcript` LONGTEXT NULL,
+  `Proteincol` VARCHAR(45) NULL,
+  `Gene_idGene` INT NOT NULL,
+  PRIMARY KEY (`idProtein`, `Gene_idGene`),
+  INDEX `fk_Protein_Gene1_idx` (`Gene_idGene` ASC) VISIBLE,
+  CONSTRAINT `fk_Protein_Gene1`
+    FOREIGN KEY (`Gene_idGene`)
+    REFERENCES `Project2022_GenomicBD`.`Gene` (`idGene`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1;
+
+
+-- -----------------------------------------------------
+-- Table `Project2022_GenomicBD`.`Sequence`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `Project2022_GenomicBD`.`Sequence` ;
+
+CREATE TABLE IF NOT EXISTS `Project2022_GenomicBD`.`Sequence` (
+  `RefSeq` INT NOT NULL AUTO_INCREMENT,
+  `Sequence` LONGTEXT NOT NULL,
+  `Type` VARCHAR(45) NULL DEFAULT 'Unknown',
+  `Size` INT NULL,
+  `Anomaly` VARCHAR(200) NULL,
+  `Gene_idGene` INT NOT NULL,
+  `Protein_idProtein` INT NOT NULL,
+  PRIMARY KEY (`RefSeq`, `Gene_idGene`, `Protein_idProtein`),
+  UNIQUE INDEX `RefSeq_UNIQUE` (`RefSeq` ASC) VISIBLE,
+  INDEX `fk_Sequence_Gene1_idx` (`Gene_idGene` ASC) VISIBLE,
+  INDEX `fk_Sequence_Protein1_idx` (`Protein_idProtein` ASC) VISIBLE,
+  CONSTRAINT `fk_Sequence_Gene1`
+    FOREIGN KEY (`Gene_idGene`)
+    REFERENCES `Project2022_GenomicBD`.`Gene` (`idGene`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Sequence_Protein1`
+    FOREIGN KEY (`Protein_idProtein`)
+    REFERENCES `Project2022_GenomicBD`.`Protein` (`idProtein`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Data for table `Project2022_GenomicBD`.`Organism`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `Project2022_GenomicBD`;
+INSERT INTO `Project2022_GenomicBD`.`Organism` (`idOrganism`, `Common name`, `Family`, `Spieces`) VALUES (1, 'Human', 'Homo', 'Homo sapiens');
+
+COMMIT;
+
