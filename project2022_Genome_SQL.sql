@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `Project2022_GenomicBD`.`Organism` (
   `idOrganism` INT NOT NULL AUTO_INCREMENT,
   `Common name` VARCHAR(45) NULL,
   `Family` VARCHAR(45) NULL,
-  `Spieces` VARCHAR(65) NOT NULL,
+  `Species` VARCHAR(65) NOT NULL,
   PRIMARY KEY (`idOrganism`),
   UNIQUE INDEX `idOrganism_UNIQUE` (`idOrganism` ASC) VISIBLE)
 ENGINE = InnoDB
