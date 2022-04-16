@@ -79,7 +79,7 @@ DROP TABLE IF EXISTS `Project2022_GenomicBD`.`Book` ;
 
 CREATE TABLE IF NOT EXISTS `Project2022_GenomicBD`.`Book` (
   `idBook` INT NOT NULL AUTO_INCREMENT,
-  `TItle` VARCHAR(250) NOT NULL DEFAULT 'Untitled',
+  `Title` VARCHAR(250) NOT NULL DEFAULT 'Untitled',
   `Author` VARCHAR(500) NOT NULL DEFAULT 'Anonymus',
   `Description` LONGTEXT NULL,
   PRIMARY KEY (`idBook`))
