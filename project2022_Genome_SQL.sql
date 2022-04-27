@@ -86,7 +86,6 @@ CREATE TABLE IF NOT EXISTS `Project2022_GenomicBD`.`Book` (
 ENGINE = MyISAM
 AUTO_INCREMENT = 1;
 
-
 -- -----------------------------------------------------
 -- Table `Project2022_GenomicBD`.`Bookshelf`
 -- -----------------------------------------------------
@@ -181,6 +180,18 @@ AUTO_INCREMENT = 1;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Altering tables
+-- -----------------------------------------------------
+
+ALTER TABLE `Project2022_GenomicBD`.`Sequence` 
+ADD INDEX `SIZE` (`Size` ASC) VISIBLE
+;
+
+ALTER TABLE `Project2022_GenomicBD`.`Book` 
+ADD INDEX `Title` (`Title` ASC) VISIBLE
+;
 
 -- -----------------------------------------------------
 -- Data for table `Project2022_GenomicBD`.`Organism`
