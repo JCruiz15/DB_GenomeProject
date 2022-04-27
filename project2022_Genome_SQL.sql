@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `Project2022_GenomicBD`.`Book` (
   `Author` VARCHAR(500) NOT NULL DEFAULT 'Anonymus',
   `Description` LONGTEXT NULL,
   PRIMARY KEY (`idBook`))
-ENGINE = InnoDB
+ENGINE = MyISAM
 AUTO_INCREMENT = 1;
 
 
