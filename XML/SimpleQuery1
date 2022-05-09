@@ -1,0 +1,10 @@
+xquery version "3.1";
+
+for $x in doc("genome_DB_XML.xml")/Dataset/GENOME
+where $x/@Release_number >0
+order by $x/@Release_date
+return <result>{
+    <Name>{data($x/@Name)}</Name>,
+    <Assembly>{data($x/@Assembly)}</Assembly>,
+    <Release_date>{data($x/@Release_date)}</Release_date>
+}</result>

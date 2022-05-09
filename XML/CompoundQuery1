@@ -1,0 +1,11 @@
+xquery version "3.1";
+
+for $x in doc("genome_DB_XML.xml")/Dataset/GENOME
+where $x/CHROMOSOME/GENE/SEQUENCE/@Size > avg($x/CHROMOSOME/GENE/SEQUENCE/@Size)
+return <result>{
+    <Name>{data($x/CHROMOSOME/GENE/@Description)}</Name>,
+    <Loc_start>{data($x/CHROMOSOME/GENE/SEQUENCE/@Location_start)}</Loc_start>,
+    <Loc_end>{data($x/CHROMOSOME/GENE/SEQUENCE/@Location_end)}</Loc_end>,
+    <Type>{data($x/CHROMOSOME/GENE/SEQUENCE/@Type)}</Type>,
+    <Size>{data($x/CHROMOSOME/GENE/SEQUENCE/@Size)}</Size>
+}</result>

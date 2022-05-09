@@ -1,0 +1,11 @@
+xquery version "3.1";
+
+for $x in doc("genome_DB_XML.xml")/Dataset/GENOME
+where string-length($x/CHROMOSOME/GENE/SEQUENCE/PROTEIN/@Transcript)>15000
+return <result>{
+    <Gene>{data($x/CHROMOSOME/GENE/@Description)}</Gene>,
+    <Sequence>{data($x/CHROMOSOME/GENE/SEQUENCE/@Sequence)}</Sequence>,
+    <Protein>{data($x/CHROMOSOME/GENE/SEQUENCE/PROTEIN/@Name)}</Protein>,
+    <Function>{data($x/CHROMOSOME/GENE/SEQUENCE/PROTEIN/@Function)}</Function>,
+    <Chromosome>{data($x/CHROMOSOME/@Chromosome_num)}</Chromosome>
+}</result>
