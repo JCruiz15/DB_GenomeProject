@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2022 rel. 2 (x64) (http://www.altova.com) by Jesus (UMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="Dataset">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="GENOME">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="CHROMOSOME">
+								<xs:complexType>
+									<xs:sequence maxOccurs="unbounded">
+										<xs:element name="GENE">
+											<xs:complexType>
+												<xs:sequence maxOccurs="unbounded">
+													<xs:element name="SEQUENCE">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PROTEIN">
+																	<xs:complexType>
+																		<xs:attribute name="Transcript" type="xs:string" use="required"/>
+																		<xs:attribute name="Function" type="xs:string" use="optional"/>
+																		<xs:attribute name="Name" type="xs:string" use="required"/>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="Anomaly" type="xs:string" use="optional"/>
+															<xs:attribute name="Size" type="xs:integer" use="required"/>
+															<xs:attribute name="Type" type="xs:string" use="optional"/>
+															<xs:attribute name="Sequence" type="xs:string" use="required"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="Description" type="xs:string" use="optional"/>
+												<xs:attribute name="Location_start" type="xs:integer" use="required"/>
+												<xs:attribute name="Location_end" type="xs:integer" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="Chromosome_num" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="BOOKSHELF">
+								<xs:complexType>
+									<xs:attribute name="Description" type="xs:string" use="optional"/>
+									<xs:attribute name="Author" type="xs:string" use="optional"/>
+									<xs:attribute name="Title" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="Organism" type="xs:string" use="required"/>
+						<xs:attribute name="Release_number" type="xs:int" use="optional"/>
+						<xs:attribute name="Release_date" type="xs:date" use="optional"/>
+						<xs:attribute name="Name" type="xs:string" use="required"/>
+						<xs:attribute name="Assembly" type="xs:string" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
