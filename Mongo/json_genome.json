@@ -1,0 +1,82 @@
+[
+	{
+		"idGenome" : 1,
+		"Name" : "Homo sapiens",
+		"Assembly" : "GRCh38.p14",
+		"Release_date" : "2021-11-22",
+		"Release_number" : 109,
+		"Organism_idOrganism" : 1
+	},
+	{
+		"idGenome" : 2,
+		"Name" : "Mus musculus",
+		"Assembly" : "GRCm39",
+		"Release_date" : "2020-09-22",
+		"Release_number" : 109,
+		"Organism_idOrganism" : 2
+	},
+	{
+		"idGenome" : 3,
+		"Name" : "Canis lupus",
+		"Assembly" : "ROS_Cfam_1.0",
+		"Release_date" : "2021-01-08",
+		"Release_number" : 106,
+		"Organism_idOrganism" : 3
+	},
+	{
+		"idGenome" : 4,
+		"Name" : "Bos taurus",
+		"Assembly" : "ARS-UCD1.2",
+		"Release_date" : "2018-05-11",
+		"Release_number" : 106,
+		"Organism_idOrganism" : 4
+	},
+	{
+		"idGenome" : 5,
+		"Name" : "Ovis aries",
+		"Assembly" : "ARS-UI_Ramb_v2.0",
+		"Release_date" : "2021-06-03",
+		"Release_number" : 104,
+		"Organism_idOrganism" : 5
+	},
+	{
+		"idGenome" : 6,
+		"Name" : "Drosophila melanogaster",
+		"Assembly" : "RELEASE 6 plus ISO1 MT",
+		"Release_date" : "2014-08-08",
+		"Release_number" : -1,
+		"Organism_idOrganism" : 6
+	},
+	{
+		"idGenome" : 7,
+		"Name" : "Caenorhabditis",
+		"Assembly" : "WBcel235",
+		"Release_date" : "2013-03-04",
+		"Release_number" : -1,
+		"Organism_idOrganism" : 7
+	},
+	{
+		"idGenome" : 8,
+		"Name" : "Arabidopsis thaliana",
+		"Assembly" : "TAIR10.1",
+		"Release_date" : "2018-06-04",
+		"Release_number" : -1,
+		"Organism_idOrganism" : 8
+	},
+	{
+		"idGenome" : 9,
+		"Name" : "Danio rerio",
+		"Assembly" : "GRCz11",
+		"Release_date" : "2017-06-26",
+		"Release_number" : 106,
+		"Organism_idOrganism" : 9
+	},
+	{
+		"idGenome" : 10,
+		"Name" : "Oryza sativa",
+		"Assembly" : "IRGSP-1.0",
+		"Release_date" : "2018-08-07",
+		"Release_number" : 102,
+		"Organism_idOrganism" : 10
+	}
+]

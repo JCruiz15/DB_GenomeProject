@@ -1,0 +1,70 @@
+[
+	{
+		"Genome_idGenome" : 1,
+		"Book_idBook" : 1
+	},
+	{
+		"Genome_idGenome" : 1,
+		"Book_idBook" : 2
+	},
+	{
+		"Genome_idGenome" : 1,
+		"Book_idBook" : 3
+	},
+	{
+		"Genome_idGenome" : 2,
+		"Book_idBook" : 4
+	},
+	{
+		"Genome_idGenome" : 2,
+		"Book_idBook" : 5
+	},
+	{
+		"Genome_idGenome" : 3,
+		"Book_idBook" : 6
+	},
+	{
+		"Genome_idGenome" : 3,
+		"Book_idBook" : 7
+	},
+	{
+		"Genome_idGenome" : 4,
+		"Book_idBook" : 8
+	},
+	{
+		"Genome_idGenome" : 5,
+		"Book_idBook" : 9
+	},
+	{
+		"Genome_idGenome" : 5,
+		"Book_idBook" : 10
+	},
+	{
+		"Genome_idGenome" : 6,
+		"Book_idBook" : 11
+	},
+	{
+		"Genome_idGenome" : 7,
+		"Book_idBook" : 12
+	},
+	{
+		"Genome_idGenome" : 7,
+		"Book_idBook" : 13
+	},
+	{
+		"Genome_idGenome" : 9,
+		"Book_idBook" : 14
+	},
+	{
+		"Genome_idGenome" : 8,
+		"Book_idBook" : 15
+	},
+	{
+		"Genome_idGenome" : 8,
+		"Book_idBook" : 16
+	},
+	{
+		"Genome_idGenome" : 10,
+		"Book_idBook" : 17
+	}
+]

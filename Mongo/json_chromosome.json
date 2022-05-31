@@ -1,0 +1,52 @@
+[
+	{
+		"Gene_idGene" : 1,
+		"ChromosomeNum" : "17",
+		"Genome_idGenome" : 1
+	},
+	{
+		"Gene_idGene" : 2,
+		"ChromosomeNum" : "17",
+		"Genome_idGenome" : 2
+	},
+	{
+		"Gene_idGene" : 3,
+		"ChromosomeNum" : "13",
+		"Genome_idGenome" : 3
+	},
+	{
+		"Gene_idGene" : 4,
+		"ChromosomeNum" : "22",
+		"Genome_idGenome" : 4
+	},
+	{
+		"Gene_idGene" : 5,
+		"ChromosomeNum" : "6",
+		"Genome_idGenome" : 5
+	},
+	{
+		"Gene_idGene" : 6,
+		"ChromosomeNum" : "3L",
+		"Genome_idGenome" : 6
+	},
+	{
+		"Gene_idGene" : 7,
+		"ChromosomeNum" : "I",
+		"Genome_idGenome" : 7
+	},
+	{
+		"Gene_idGene" : 8,
+		"ChromosomeNum" : "2",
+		"Genome_idGenome" : 8
+	},
+	{
+		"Gene_idGene" : 9,
+		"ChromosomeNum" : "13",
+		"Genome_idGenome" : 9
+	},
+	{
+		"Gene_idGene" : 10,
+		"ChromosomeNum" : "5",
+		"Genome_idGenome" : 10
+	}
+]

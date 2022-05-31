@@ -1,0 +1,72 @@
+[
+	{
+		"idGene" : 1,
+		"Location_start" : 7666514,
+		"Location_end" : 7689397,
+		"Description" : null,
+		"Name" : "TP53"
+	},
+	{
+		"idGene" : 2,
+		"Location_start" : 44806874,
+		"Location_end" : 45125684,
+		"Description" : null,
+		"Name" : "Runx2"
+	},
+	{
+		"idGene" : 3,
+		"Location_start" : 47709671,
+		"Location_end" : 47807873,
+		"Description" : null,
+		"Name" : "Kit"
+	},
+	{
+		"idGene" : 4,
+		"Location_start" : 56224487,
+		"Location_end" : 56232081,
+		"Description" : null,
+		"Name" : "CHO"
+	},
+	{
+		"idGene" : 5,
+		"Location_start" : 29985472,
+		"Location_end" : 30527777,
+		"Description" : null,
+		"Name" : "BMPR1B"
+	},
+	{
+		"idGene" : 6,
+		"Location_start" : 22272950,
+		"Location_end" : 22285370,
+		"Description" : null,
+		"Name" : "w"
+	},
+	{
+		"idGene" : 7,
+		"Location_start" : 10750498,
+		"Location_end" : 10776703,
+		"Description" : null,
+		"Name" : "daf-16"
+	},
+	{
+		"idGene" : 8,
+		"Location_start" : 8139756,
+		"Location_end" : 8144461,
+		"Description" : null,
+		"Name" : "PHYB"
+	},
+	{
+		"idGene" : 9,
+		"Location_start" : 29766213,
+		"Location_end" : 29808444,
+		"Description" : null,
+		"Name" : "pax2a"
+	},
+	{
+		"idGene" : 10,
+		"Location_start" : 185328,
+		"Location_end" : 188756,
+		"Description" : null,
+		"Name" : "LOC4337539"
+	}
+]

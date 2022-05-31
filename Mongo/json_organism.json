@@ -1,0 +1,62 @@
+[
+	{
+		"idOrganism" : 1,
+		"Common_name" : "human",
+		"Family" : "Homininae",
+		"Species" : "Homo sapiens"
+	},
+	{
+		"idOrganism" : 2,
+		"Common_name" : "mouse",
+		"Family" : "Murinae",
+		"Species" : "Mus musculus"
+	},
+	{
+		"idOrganism" : 3,
+		"Common_name" : "dog",
+		"Family" : "Laurasiatheria",
+		"Species" : "Canis lupus"
+	},
+	{
+		"idOrganism" : 4,
+		"Common_name" : "cattle",
+		"Family" : "Bovidae",
+		"Species" : "Bos taurus"
+	},
+	{
+		"idOrganism" : 5,
+		"Common_name" : "sheep",
+		"Family" : "Bovidae",
+		"Species" : "Ovis aries"
+	},
+	{
+		"idOrganism" : 6,
+		"Common_name" : "fruit fly",
+		"Family" : "Diptera",
+		"Species" : "Drosophila melanogaster"
+	},
+	{
+		"idOrganism" : 7,
+		"Common_name" : "nematode",
+		"Family" : "Ecdysozoa",
+		"Species" : "Caenorhabditis"
+	},
+	{
+		"idOrganism" : 8,
+		"Common_name" : "arabidopsis",
+		"Family" : "rosids",
+		"Species" : "Arabidopsis thaliana"
+	},
+	{
+		"idOrganism" : 9,
+		"Common_name" : "zebrafish",
+		"Family" : "Euteleostomi",
+		"Species" : "Danio rerio"
+	},
+	{
+		"idOrganism" : 10,
+		"Common_name" : "rice",
+		"Family" : "Poaceae",
+		"Species" : "Oryza sativa"
+	}
+]
