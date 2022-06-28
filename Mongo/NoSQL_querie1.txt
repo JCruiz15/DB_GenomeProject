@@ -1,0 +1,6 @@
+
+
+$and{(" Release_date " : /^2021/),(" Release_number " : ({$gte} : 105 ))
+    
+
+

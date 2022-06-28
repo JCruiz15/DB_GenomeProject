@@ -1,0 +1,3 @@
+
+$and{{"Release_date": {$gte}: newISODate('2020-01-01')},
+{"Release_date": {$lt}: new ISODate('2022-01-01')}}
